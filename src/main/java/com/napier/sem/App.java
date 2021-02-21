@@ -27,4 +27,6 @@ public class App
         Document myDoc = collection.find().first();
         System.out.println(myDoc.toJson());
     }
+    // Connect to MongoDB
+    MongoClient mongoClient = new MongoClient("mongo-dbserver");
 }
